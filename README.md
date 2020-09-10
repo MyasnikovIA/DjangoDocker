@@ -6,7 +6,7 @@ Docker development environment for Django app
 2. переходим в проект 
 
 В термирнале:
-3. $ docker build .
+3. $ docker build  . 
 
 4. $ docker-compose build
 
@@ -14,8 +14,12 @@ Docker development environment for Django app
 
 6. $docker-compose up
 
-Перейти на страницу http://localhost:8000/
+Перейти на страницу http://localhost:8888/
 
 7. $ docker-compose exec ddda python manage.py migrate
 
+
+
+<br/>docker save -o F:\DockerProject\djangodocker_ddda.tar djangodocker_ddda:latest  - выгразить контейнер в файл 
+<br/>docker load -i F:\DockerProject\djangodocker_ddda.tar - Загрузить кнтейнер из файла
 
