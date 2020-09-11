@@ -1,6 +1,9 @@
 #base image
 FROM python:3.7-alpine
 
+
+ADD run.sh /docker-entrypoint-initdb.d
+
 #maintainer
 LABEL Author="CodeGenes"
 
@@ -29,3 +32,11 @@ RUN adduser -D user
 
 #switch from root to user to run our app
 USER user
+
+COPY  ./run.sh /run.sh
+SHELL ["/run.sh"]
+
+CMD [ "sh", "-c", "python manage.py runserver 0.0.0.0:8000"]
+
+EXPOSE 8000 
+EXPOSE 5432

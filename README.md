@@ -20,6 +20,6 @@ Docker development environment for Django app
 
 
 
-<br/>docker save -o F:\DockerProject\djangodocker_ddda.tar djangodocker_ddda:latest  - выгразить контейнер в файл 
-<br/>docker load -i F:\DockerProject\djangodocker_ddda.tar - Загрузить кнтейнер из файла
+<br/>docker save -o F:\DockerProject\django.tar django:latest  - выгразить контейнер в файл 
+<br/>docker load -i F:\DockerProject\django.tar - Загрузить кнтейнер из файла
 
