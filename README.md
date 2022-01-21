@@ -1,4 +1,5 @@
 # django-docker-dev-app
+***Кукла для развертывания django в докер контейнере***
 Docker development environment for Django app
 
 1. Клонируем приложение  https://github.com/MyasnikovIA/DjangoDocker.git
